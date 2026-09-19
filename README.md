@@ -40,13 +40,13 @@ folder. If you'd like to run the tests separately for the two classes, you can
 specify which test file to run:
 
 ```console
-$ pytest -x testing/book_test.py
+$ pytest -x lib/testing/book_test.py
 ```
 
 or:
 
 ```console
-$ pytest -x testing/coffee_test.py
+$ pytest -x lib/testing/coffee_test.py
 ```
 
 Remember that the optional `-x` flag makes your tests stop after the first
@@ -143,4 +143,34 @@ Before you submit your solution, you need to save your progress with git.
 4. When you are ready to submit, click the ***Load Lab: Object Oriented Programming (OOP)- Part 1- Bookstore*** button in Canvas to launch CodeGrade.
   * Click on + Create Submission. Connect your repository for this lab.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas)
+
+## Completed Functionality
+
+### Book
+
+The `Book` class provides:
+
+- A `title` attribute for the book title.
+- A `page_count` attribute with integer validation.
+- A `turn_page()` method that displays a page-turning message.
+
+### Coffee
+
+The `Coffee` class provides:
+
+- A `size` attribute that accepts `Small`, `Medium`, or `Large`.
+- A `price` attribute.
+- A `tip()` method that displays a message and increases the coffee price by 1.
+
+## Testing
+
+![All tests passing](docs/tests-passing.png)
+
+The Book and Coffee classes are tested using pytest.
+
+Run all tests with:
+
+```console
+$ pytest
+```
 
